@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>mainWindow</class>
+ <widget class="QMainWindow" name="mainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QWidget" name="widget" native="true">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>1</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QComboBox" name="comboBox_jixing">
+         <item>
+          <property name="text">
+           <string>挖掘机</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>混凝土泵车</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>旋挖钻机</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>装载机</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>压路机</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBox_sensor">
+         <item>
+          <property name="text">
+           <string>压力传感器</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>位移传感器</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>流量传感器</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>振动传感器</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="radioButton_Analog">
+         <property name="text">
+          <string>模拟量配置</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QWidget" name="widget_4" native="true">
+         <layout class="QGridLayout" name="gridLayout">
+          <item row="1" column="3">
+           <widget class="QLabel" name="label">
+            <property name="text">
+             <string>配置通道</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="4">
+           <widget class="QComboBox" name="comboBox">
+            <item>
+             <property name="text">
+              <string>通道1</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>通道2</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>通道3</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>通道4</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>通道5</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>通道6</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>通道7</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>通道8</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>通道9</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>通道10</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>通道11</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>通道12</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>通道13</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>通道14</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>通道15</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>通道16</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item row="6" column="3" colspan="2">
+           <widget class="QLabel" name="label_11">
+            <property name="text">
+             <string>y=</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="3">
+           <widget class="QLabel" name="label_6">
+            <property name="text">
+             <string>b=</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="4">
+           <widget class="QLabel" name="label_y">
+            <property name="text">
+             <string>y=kx+b</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="3">
+           <widget class="QLabel" name="label_3">
+            <property name="text">
+             <string>关系换算</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="3">
+           <widget class="QLabel" name="label_5">
+            <property name="text">
+             <string>k=</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="3">
+           <widget class="QLabel" name="label_2">
+            <property name="text">
+             <string>传感器单位</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="4">
+           <widget class="QLineEdit" name="lineEdit_b"/>
+          </item>
+          <item row="2" column="4">
+           <widget class="QLineEdit" name="sensor"/>
+          </item>
+          <item row="4" column="4">
+           <widget class="QLineEdit" name="lineEdit_k"/>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="radioButton_Digital">
+         <property name="text">
+          <string>数字量配置</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QWidget" name="widget_5" native="true">
+         <layout class="QGridLayout" name="gridLayout_2">
+          <item row="2" column="1">
+           <widget class="QTextBrowser" name="textBrowser_port0">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>2</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="label_7">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>1</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>port0：</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="1">
+           <widget class="QTextBrowser" name="textBrowser_port1">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>2</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="QLabel" name="label_13">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>1</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>port1：</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QLabel" name="label_8">
+            <property name="font">
+             <font>
+              <family>宋体</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>数字通道</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QWidget" name="widget_3" native="true">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>2</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_4"/>
+     </widget>
+    </item>
+    <item>
+     <widget class="QWidget" name="widget_2" native="true">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>1</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QWidget" name="widget_6" native="true">
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <item>
+           <widget class="QPushButton" name="pushButton_start">
+            <property name="text">
+             <string>开始测量</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_stop">
+            <property name="text">
+             <string>停止测量</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_review">
+            <property name="text">
+             <string>数据回放</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_save">
+            <property name="text">
+             <string>保存文件</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_clear">
+            <property name="text">
+             <string>清除数据</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QWidget" name="widget_7" native="true">
+         <layout class="QGridLayout" name="gridLayout_3">
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_9">
+            <property name="text">
+             <string>采样频率/Hz</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="2">
+           <widget class="QPushButton" name="pushButton_frequency">
+            <property name="text">
+             <string>确定</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLineEdit" name="lineEdit_frequency">
+            <property name="text">
+             <string>10000</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="label_10">
+            <property name="text">
+             <string>IP地址</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QLineEdit" name="lineEdit_IP">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="text">
+             <string>42.234.121.115</string>
+            </property>
+            <property name="placeholderText">
+             <string>42.234.121.115</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="2">
+           <widget class="QPushButton" name="pushButton_listening">
+            <property name="text">
+             <string>开始监听</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>23</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
